@@ -199,7 +199,7 @@ body {
     gap: 15px;
     font-size: 14px;
     margin: 10px 20px 20px 20px;
-    height: 70%;
+    height: 80%;
 }
 
 .card {
@@ -207,10 +207,15 @@ body {
     background-color: white;
     padding: 10px;
     border-radius: 5px;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
 }
 
-.card :first-child {
-    padding: 5px 0 10px;
+.card-buttons {
+    justify-self: end;
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .announcements {
@@ -241,23 +246,39 @@ body {
     height: auto;
 }
 
+.trending p {
+    padding: 0 0 10px 0;
+}
+
 .socials-container {
     display: grid;
     background-color: white;
     font-size: 0.8rem;
     border-radius: 5px;
-    height: 80%;
+    height: 85%;
 }
 
 .socials {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    padding-bottom: 10px;
     padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 70px;
+    font-weight: bold;
 }
 
 .socials p {
+    font-size: 0.7rem;
+    margin-left: 20px;
     grid-column: 2 / 3;
+    padding-top: 10px;
+}
+
+.socials img {
+    width: 70px;
+    height: 75px;
+    border-radius: 50%;
 }
 
 .title {
